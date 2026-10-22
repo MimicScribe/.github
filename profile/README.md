@@ -1,15 +1,11 @@
 # MimicScribe
 
-**Meeting transcription & talking points for macOS.**
+**In-Meeting Notetaker / Transcription for macOS.**
 
-MimicScribe is a menu bar app that runs speech-to-text entirely on-device using [NVIDIA Parakeet](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/asr/models.html#parakeet) via CoreML. Your audio never leaves your Mac.
+MimicScribe is a menu bar app that runs ASR and diarization models on-device using a custom train of [NVIDIA Parakeet Ultra]([https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/asr/models.html#parakeet](https://github.com/MimicScribe/parakeet-spoken-form)) via CoreML. 
 
-### What it does
-
-- **Meeting transcription** — Capture system audio + mic with speaker diarization
-- **In-meeting talking points** — Get real-time AI-powered suggestions during live meetings
-- **Insert mode** — Dictate and paste transcribed text anywhere
-- **Instruction mode** — Speak voice commands, get AI responses in an overlay
+* It builds the final high-quality transcript during the meeting and associates action items with voice labels.
+* It uses signals from the Nemotron 3 and PyAnnote Community 1 diarizers to separate speakers. 99% accurate [benchmark.](https://github.com/MimicScribe/benchmarks/blob/main/diarization/results/RESULTS.md)
 
 ### Links
 
